@@ -3,15 +3,12 @@
 const path = 'http://localhost:5500';
 // const path = 'https://carlosalvarezlinares.com';
 
+// ON LOAD
 document.addEventListener('DOMContentLoaded', function () {
-    particlesJS.load('particles-js', path + '/src/js/particlesjs-config.json', function () {
-        return consoleHello();
-    });
-    // setTimeout(() => {
-    //     msg();
-    // }, 3000);
+    particlesJS.load('particles-js', path + '/src/js/particlesjs-config.json', () => consoleHello());
 });
 
+// MESSAGE IN CONSOLE
 function consoleHello() {
     let userAgent = navigator.userAgent.toLowerCase();
     // let supported = /(chrome|firefox)/;
@@ -30,35 +27,16 @@ function consoleHello() {
 
 // NAVBAR
 document.addEventListener('DOMContentLoaded', () => {
-
-    // Get all "navbar-burger" elements
     const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
-
-    // Check if there are any navbar burgers
     if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
         $navbarBurgers.forEach(el => {
             el.addEventListener('click', () => {
-
-                // Get the target from the "data-target" attribute
                 const target = el.dataset.target;
                 const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
                 el.classList.toggle('is-active');
                 $target.classList.toggle('is-active');
 
             });
         });
     }
-
 });
-
-function msg() {
-    console.log("Escribe 'cv()' para ver mi CV");
-}
-function cv() {
-    window.location.replace(path + "/cv.html");
-    // window.location.href = path + "/src/pdf/CV-Carlos-Alvarez-Linares.pdf";
-}

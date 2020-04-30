@@ -1,11 +1,23 @@
 // sass --watch src/css/custom.scss src/css/custom.min.css --style compressed
 @import "./particlesjs.scss";
 
+@font-face {
+  font-family: "Cascadia";
+  src: url("../font/cascadia-webfont.woff") format("woff"),
+    url("../font/cascadia-webfont.woff2") format("woff2"),
+    url("../font/cascadia-webfont.ttf") format("truetype");
+}
+
+* {
+  font-family: "Cascadia", "Nunito Sans", -apple-system, system-ui,
+    BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
 $black: rgba(
   $color: #000,
   $alpha: 1,
 );
-$monospace: "Courier New", Courier, monospace;
+$monospace: "Cascadia", "Courier New", Courier, monospace;
 
 .section {
   padding: 0;

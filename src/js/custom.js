@@ -1,6 +1,7 @@
 'use strict';
 
 const path = 'http://localhost:5500';
+// const path = 'https://carlosalvarezlinares.com';
 
 document.addEventListener('DOMContentLoaded', function () {
     particlesJS.load('particles-js', path + '/src/js/particlesjs-config.json', function () {

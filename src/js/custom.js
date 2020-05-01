@@ -17,6 +17,11 @@ function closeModalDaw() {
     document.querySelector('#modal-daw').classList.remove('is-active');
 }
 
+// DESCARGAR PDF
+document.querySelector('.a-download').addEventListener('click', event =>
+    event.target.href = "../pdf/CV-Carlos-Alvarez-Linares.pdf"
+);
+
 // MESSAGE IN CONSOLE
 function consoleHello() {
     let userAgent = navigator.userAgent.toLowerCase();

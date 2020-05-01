@@ -100,7 +100,7 @@
                 <div class="navbar-end">
                     <div class="navbar-item">
                         <div class="buttons">
-                            <a class="button is-primary">
+                            <a class="button is-primary" disabled>
                                 <strong>
                                     <i class="fas fa-language"></i> English
                                 </strong>
@@ -126,25 +126,44 @@
         </div>
     </div>
 
+    <!-- <div id="home" class="particles-js">
+        <div id="particles-js"></div>
+        <div class="text-particles">
+            <div class="container">
+                <div id="typewriter" class="title has-text-white is-lowercase"></div>
+            </div>
+
+        </div>
+    </div> -->
+
     <!-- CONTENT -->
     <section class="section" id="sobremi">
         <div class="hero is-primary is-bold">
             <div class="container has-text-white">
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title is-2">
                         Sobre mi
                     </h1>
                     <hr class="navbar-divider">
-                    <p class="subtitle">
-                        My first website with <strong>Bulma</strong>!
-                    </p>
-                    <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="es_ES"
-                        data-type="horizontal" data-theme="dark" data-vanity="carlosalvarezlinares">
-                        <a class="LI-simple-link"
-                            href='https://es.linkedin.com/in/carlosalvarezlinares?trk=profile-badge'>Carlos
-                            Alvarez
-                            Linares
-                        </a>
+                    <div class="columns">
+                        <div class="column is-two-thirds is-size-5 is-size-5-tablet is-size-6-mobile">
+                            <p>
+                                Empecé estudiando diseño, aunque me gustaba, vi un futuro en la programación y decidí
+                                continuar mis estudios en desarrollo de aplicaciones web.
+                            </p>
+                            <br>
+                            <p>Me gusta mucho crear cosas nuevas y aprender nuevas tecnologías, por ello creo que diseño
+                                y programación se complementan para muchas cosas.</p>
+                        </div>
+                        <div class="column">
+                            <div class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="es_ES"
+                                data-type="horizontal" data-theme="dark" data-vanity="carlosalvarezlinares">
+                                <a class="LI-simple-link"
+                                    href='https://es.linkedin.com/in/carlosalvarezlinares?trk=profile-badge'>Carlos
+                                    Alvarez Linares
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -155,12 +174,221 @@
         <div class="hero is-dark is-bold">
             <div class="container has-text-white">
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title is-2">
                         Educación
                     </h1>
-                    <p class="subtitle">
-                        My first website with <strong>Bulma</strong>!
-                    </p>
+                    <hr class="navbar-divider">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        EOI - Escuela de organización industrial
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Curso Fullstack de Java y Angular</b>
+                                        <br>
+                                        <i><time datetime="2019-9-18">18 Set 2019</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <a href="./src/pdf/diploma-java-angular.pdf" target="_blank"
+                                                class="card-footer-item"><i class="fas fa-bookmark"></i>Diploma</a>
+                                        </div>
+                                        <div class="column">
+                                            <a href="https://github.com/cArlitXs/facebu" target="_blank"
+                                                class="card-footer-item">
+                                                <!--<i
+                                                    class="fab fa-github"></i>--><i
+                                                    class="fab fa-angular"></i>Frontend</a>
+                                        </div>
+                                        <div class="column">
+                                            <a href="https://github.com/cArlitXs/facenet/tree/grupo5" target="_blank"
+                                                class="card-footer-item">
+                                                <!--<i
+                                                    class="fab fa-github"></i>--><i class="fab fa-java"></i>Backend</a>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Instituto Mare Nostrum
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Desarrollo de Aplicaciones Web</b>
+                                        <br>
+                                        <i><time datetime="2020-3-1">1 Mar 2020</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <a class="card-footer-item" onclick="showModalDaw()"><i
+                                                    class="fas fa-eye"></i>Ver proyectos</a>
+                                        </div>
+
+                                        <div id="modal-daw" class="modal">
+                                            <div class="modal-background" onclick="closeModalDaw()"></div>
+                                            <div class="modal-card">
+                                                <header class="modal-card-head">
+                                                    <p class="modal-card-title">Proyectos</p>
+                                                    <button class="delete" aria-label="close"
+                                                        onclick="closeModalDaw()"></button>
+                                                </header>
+                                                <section class="modal-card-body">
+                                                    <div class="columns">
+                                                        <div class="column">
+                                                            <div class="card">
+                                                                <header class="card-header">
+                                                                    <p class="card-header-title">
+                                                                        Hawks Burgers
+                                                                    </p>
+                                                                </header>
+                                                                <div class="card-content">
+                                                                    <div class="content">
+                                                                        Proyecto en grupo usando CSS3 sin frameworks.
+                                                                        <br>
+                                                                        <i><time datetime="2019">2019</time></i>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="columns">
+                                                                        <div class="column">
+                                                                            <a href="https://carlitxs.github.io/HawksBurgers/"
+                                                                                target="_blank"
+                                                                                class="card-footer-item">
+                                                                                <i class="fas fa-eye"></i>Demo</a>
+                                                                        </div>
+                                                                        <div class="column">
+                                                                            <a href="https://github.com/cArlitXs/HawksBurgers"
+                                                                                target="_blank"
+                                                                                class="card-footer-item">
+                                                                                <i class="fab fa-github"></i>GitHub</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="column">
+                                                            <div class="card">
+                                                                <header class="card-header">
+                                                                    <p class="card-header-title">
+                                                                        Supuesto práctico integrador
+                                                                    </p>
+                                                                </header>
+                                                                <div class="card-content">
+                                                                    <div class="content">
+                                                                        Práctica final realizada con C#, ASP.NET y
+                                                                        Bootstrap
+                                                                        4
+                                                                        <br>
+                                                                        <i><time datetime="2019">2019</time></i>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="columns">
+                                                                        <div class="column">
+                                                                            <a href="https://github.com/cArlitXs/SupuestoPracticoIntegrador"
+                                                                                target="_blank"
+                                                                                class="card-footer-item">
+                                                                                <i class="fab fa-github"></i>GitHub</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="columns">
+                                                        <div class="column">
+                                                            <div class="card">
+                                                                <header class="card-header">
+                                                                    <p class="card-header-title">
+                                                                        Vue REST API
+                                                                    </p>
+                                                                </header>
+                                                                <div class="card-content">
+                                                                    <div class="content">
+                                                                        Una página SPA construida con VUE para
+                                                                        solicitudes AJAX.
+                                                                        <br>
+                                                                        <i><time datetime="2019">2019</time></i>
+                                                                    </div>
+                                                                </div>
+                                                                <footer class="card-footer">
+                                                                    <div class="columns">
+                                                                        <div class="column">
+                                                                            <a href="https://github.com/cArlitXs/VUE-PROJECT"
+                                                                                target="_blank"
+                                                                                class="card-footer-item">
+                                                                                <i class="fab fa-github"></i>GitHub</a>
+                                                                        </div>
+                                                                    </div>
+                                                                </footer>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </section>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        MGP - Master Group Perú International
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Animación 2D, Producción Multimedia y Posicionamiento Web</b>
+                                        <br>
+                                        <i><time datetime="2012">2011 - 2012</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Instituto Poussin
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Diseño Gráfico Publicitario</b>
+                                        <br>
+                                        <i><time datetime="2010">2009 - 2010</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <!-- <a href="#" class="card-footer-item"><i class="fab fa-behance-square"></i>Behance</a> -->
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -170,11 +398,65 @@
         <div class="hero is-link is-bold">
             <div class="container has-text-white">
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title is-2">
                         Experiencia
                     </h1>
+                    <hr class="navbar-divider">
+                    <div class="columns">
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Accenture España
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Programador becario</b>
+                                        <br>
+                                        Estuve aprendiendo tecnologías para dar mantenimiento a una plataforma web de un
+                                        banco. Aquí aprendí tecnologías a usar como ReactJS, Polymer y PHP.
+                                        <br>
+                                        <i><time datetime="2019">2019</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <!-- <a href="#" class="card-footer-item"><i class="fab fa-behance-square"></i>Behance</a> -->
+                                </footer>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="card">
+                                <header class="card-header">
+                                    <p class="card-header-title">
+                                        Mora Publicidad & Representaciones SAC
+                                    </p>
+                                </header>
+                                <div class="card-content">
+                                    <div class="content">
+                                        <b>Diseñador gráfico</b>
+                                        <br>
+                                        Encargado de innovar en anuncios para los clientes en cada publicación siguiendo
+                                        unas pautas de marketing.
+                                        <br>
+                                        <i><time datetime="2013">2012 - 2013</time></i>
+                                    </div>
+                                </div>
+                                <footer class="card-footer">
+                                    <div class="columns">
+                                        <div class="column">
+                                            <a href="http://be.net/carlitosalvarezl" target="_blank"
+                                                class="card-footer-item"><i
+                                                    class="fab fa-behance-square"></i>Behance</a>
+                                        </div>
+                                    </div>
+                                </footer>
+                            </div>
+                        </div>
+                    </div>
                     <p class="subtitle">
-                        My first website with <strong>Bulma</strong>!
+                        Tengo experiencia personal y eventual de <b>camarero</b>.
                     </p>
                 </div>
             </div>
@@ -185,12 +467,60 @@
         <div class="hero is-light is-bold">
             <div class="container">
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title is-2">
                         Aptitudes
                     </h1>
-                    <p class="subtitle">
-                        My first website with <strong>Bulma</strong>!
-                    </p>
+                    <hr class="navbar-divider">
+                    <div class="columns is-mobile">
+                        <div class="column padding-0">
+                            <p>
+                                <a href="https://developer.mozilla.org/es/docs/Web/JavaScript">#javascript</a>
+                                <progress class="progress is-dark" value="85" max="100">85%</progress>
+                            </p>
+                            <p>
+                                <a href="https://docs.microsoft.com/es-es/dotnet/csharp/">#c#</a>
+                                <progress class="progress is-dark" value="75" max="100">75%</progress>
+                            </p>
+                            <p>
+                                <a href="https://docs.oracle.com/en/java/javase/11/">#java</a>
+                                <progress class="progress is-dark" value="60" max="100">60%</progress>
+                            </p>
+                            <p>
+                                <a href="https://vuejs.org/">#vuejs</a>
+                                <progress class="progress is-dark" value="65" max="100">65%</progress>
+                            </p>
+                            <p>
+                                <a href="https://dotnet.microsoft.com/apps/aspnet">#asp.net</a>
+                                <progress class="progress is-dark" value="75" max="100">75%</progress>
+                            </p>
+                            <p>
+                                <a href="https://reactjs.org/">#reactjs</a>
+                                <progress class="progress is-dark" value="50" max="100">50%</progress>
+                            </p>
+                        </div>
+                        <div class="column padding-0">
+                            <p>
+                                <a href="https://docs.microsoft.com/es-es/sql/?view=sql-server-ver15">#sql</a>
+                                <progress class="progress is-dark" value="85" max="100">85%</progress>
+                            </p>
+                            <p>
+                                <a href="https://www.php.net/docs.php">#php</a>
+                                <progress class="progress is-dark" value="50" max="100">50%</progress>
+                            </p>
+                            <p>
+                                <a href="https://spring.io/projects/spring-boot">#springboot</a>
+                                <progress class="progress is-dark" value="75" max="100">75%</progress>
+                            </p>
+                            <p>
+                                <a href="https://www.polymer-project.org/">#polymer</a>
+                                <progress class="progress is-dark" value="85" max="100">85%</progress>
+                            </p>
+                            <p>
+                                <a href="https://angular.io/">#angular</a>
+                                <progress class="progress is-dark" value="85" max="100">85%</progress>
+                            </p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -200,11 +530,20 @@
         <div class="hero is-bold">
             <div class="container">
                 <div class="hero-body">
-                    <h1 class="title">
+                    <h1 class="title is-2">
                         Contacto
                     </h1>
+                    <hr class="navbar-divider">
                     <p class="subtitle">
                         My first website with <strong>Bulma</strong>!
+                        <div class="buttons">
+                            <button class="button is-primary is-light">Primary</button>
+                            <button class="button is-link is-light">Link</button>
+                            <button class="button is-info is-light">Info</button>
+                            <button class="button is-success is-light">Success</button>
+                            <button class="button is-warning is-light">Warning</button>
+                            <button class="button is-danger is-light">Danger</button>
+                        </div>
                     </p>
                 </div>
             </div>
@@ -224,7 +563,7 @@
                     <a href="https://github.com/VincentGarreau/particles.js/">particles.js</a>
                 </div>
                 <div class="column">
-                    <a href="https://codepen.io/hi-im-si/pen/DHoup">JS Typewriter</a>
+                    <a href="https://codepen.io/hi-im-si/pen/DHoup">Custom typewriter</a>
                 </div>
             </div>
             <p>
@@ -241,6 +580,7 @@
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
 
     <!-- TYPEWRITER -->
+    <!-- <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script> -->
     <script src="./src/js/typewriter.min.js"></script>
 
     <!-- SCROLL REVEAL -->

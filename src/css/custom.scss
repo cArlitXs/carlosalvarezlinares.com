@@ -31,6 +31,10 @@ $monospace: "Cascadia", "Courier New", Courier, monospace;
     padding-bottom: 0.5rem;
   }
 }
+.margin-1 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 
 .card-footer {
   .columns {
@@ -42,7 +46,8 @@ $monospace: "Cascadia", "Courier New", Courier, monospace;
   width: 100%;
 }
 
-.card {
+.card,
+.button {
   .fab,
   .fas {
     margin-right: 1rem;
@@ -52,6 +57,7 @@ $monospace: "Cascadia", "Courier New", Courier, monospace;
 .modal {
   .modal-card {
     max-width: calc(100% - 2rem);
+    max-height: calc(100% - 2rem);
     .modal-card-head {
       border-bottom: 0;
       background-color: white;
@@ -70,6 +76,15 @@ $monospace: "Cascadia", "Courier New", Courier, monospace;
     padding: 3rem 1.5rem;
   }
 }
+
+.maps {
+  max-width: 300px;
+  height: 200px;
+  iframe {
+    width: 100%;
+  }
+}
+
 .footer {
   padding: 3rem 1.5rem;
 }

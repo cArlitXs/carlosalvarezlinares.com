@@ -55,7 +55,7 @@
     <nav class="navbar is-fixed-top is-black" role="navigation" aria-label="main navigation">
         <div class="container">
             <div class="navbar-brand">
-                <a class="navbar-item" href="#home">
+                <a class="navbar-item" href="#home" onclick="closeNavbar()">
                     <div>
                         Carlos Alvarez Linares
                     </div>
@@ -71,10 +71,10 @@
 
             <div id="navbarDropdown" class="navbar-menu">
                 <div class="navbar-start">
-                    <a href="#sobremi" class="navbar-item">
+                    <a href="#sobremi" class="navbar-item" onclick="closeNavbar()">
                         Sobre mi
                     </a>
-                    <a href="#educacion" class="navbar-item">
+                    <a href="#educacion" class="navbar-item" onclick="closeNavbar()">
                         Educación
                     </a>
 
@@ -83,14 +83,14 @@
                             Más
                         </a>
                         <div class="navbar-dropdown">
-                            <a href="#experiencia" class="navbar-item">
+                            <a href="#experiencia" class="navbar-item" onclick="closeNavbar()">
                                 Experiencia
                             </a>
-                            <a href="#aptitudes" class="navbar-item">
+                            <a href="#aptitudes" class="navbar-item" onclick="closeNavbar()">
                                 Aptitudes
                             </a>
                             <hr class="navbar-divider">
-                            <a href="#contacto" class="navbar-item">
+                            <a href="#contacto" class="navbar-item" onclick="closeNavbar()">
                                 Contacto
                             </a>
                         </div>
@@ -102,7 +102,7 @@
                         <div class="buttons">
                             <a class="button is-primary" disabled>
                                 <strong>
-                                    <i class="fas fa-language"></i> English
+                                    <i class="fas fa-language"></i>English
                                 </strong>
                             </a>
                         </div>
@@ -125,16 +125,6 @@
 
         </div>
     </div>
-
-    <!-- <div id="home" class="particles-js">
-        <div id="particles-js"></div>
-        <div class="text-particles">
-            <div class="container">
-                <div id="typewriter" class="title has-text-white is-lowercase"></div>
-            </div>
-
-        </div>
-    </div> -->
 
     <!-- CONTENT -->
     <section class="section" id="sobremi">
@@ -202,15 +192,12 @@
                                         <div class="column">
                                             <a href="https://github.com/cArlitXs/facebu" target="_blank"
                                                 class="card-footer-item">
-                                                <!--<i
-                                                    class="fab fa-github"></i>--><i
-                                                    class="fab fa-angular"></i>Frontend</a>
+                                                <i class="fab fa-angular"></i>Frontend</a>
                                         </div>
                                         <div class="column">
                                             <a href="https://github.com/cArlitXs/facenet/tree/grupo5" target="_blank"
                                                 class="card-footer-item">
-                                                <!--<i
-                                                    class="fab fa-github"></i>--><i class="fab fa-java"></i>Backend</a>
+                                                <i class="fab fa-java"></i>Backend</a>
                                         </div>
                                     </div>
                                 </footer>
@@ -285,14 +272,13 @@
                                                             <div class="card">
                                                                 <header class="card-header">
                                                                     <p class="card-header-title">
-                                                                        Supuesto práctico integrador
+                                                                        Fud Take Away
                                                                     </p>
                                                                 </header>
                                                                 <div class="card-content">
                                                                     <div class="content">
-                                                                        Práctica final realizada con C#, ASP.NET y
-                                                                        Bootstrap
-                                                                        4
+                                                                        Proyecto final realizado con C#, ASP.NET y
+                                                                        Bootstrap 4
                                                                         <br>
                                                                         <i><time datetime="2019">2019</time></i>
                                                                     </div>
@@ -363,9 +349,6 @@
                                         <i><time datetime="2012">2011 - 2012</time></i>
                                     </div>
                                 </div>
-                                <footer class="card-footer">
-
-                                </footer>
                             </div>
                         </div>
 
@@ -383,9 +366,6 @@
                                         <i><time datetime="2010">2009 - 2010</time></i>
                                     </div>
                                 </div>
-                                <footer class="card-footer">
-                                    <!-- <a href="#" class="card-footer-item"><i class="fab fa-behance-square"></i>Behance</a> -->
-                                </footer>
                             </div>
                         </div>
                     </div>
@@ -420,9 +400,6 @@
                                         <i><time datetime="2019">2019</time></i>
                                     </div>
                                 </div>
-                                <footer class="card-footer">
-                                    <!-- <a href="#" class="card-footer-item"><i class="fab fa-behance-square"></i>Behance</a> -->
-                                </footer>
                             </div>
                         </div>
 
@@ -521,6 +498,28 @@
                             </p>
                         </div>
                     </div>
+
+                    <br>
+                    <h1 class="title is-4">
+                        Diplomas o certificados de algunas tecnologías
+                    </h1>
+                    <hr class="navbar-divider">
+                    <div class="columns">
+                        <div class="column">
+                            <a href="./src/pdf/diploma-java-angular.pdf" target="_blank"
+                                class="button is-outlined is-dark is-light margin-1"><i class="fas fa-bookmark"></i>Java
+                                y Angular @EOI</a>
+                            <a href="./src/pdf/diploma-vuejs.pdf" target="_blank"
+                                class="button is-outlined is-dark is-light margin-1"><i
+                                    class="fas fa-bookmark"></i>VUE.JS @Platzi</a>
+                            <a href="./src/pdf/diploma-fundamentos-javascript.pdf" target="_blank"
+                                class="button is-outlined is-dark is-light margin-1"><i
+                                    class="fas fa-bookmark"></i>JavaScript @Platzi</a>
+                            <a href="./src/pdf/diploma-html-css.pdf" target="_blank"
+                                class="button is-outlined is-dark is-light margin-1"><i class="fas fa-bookmark"></i>HTML
+                                y CSS @Platzi</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -534,17 +533,19 @@
                         Contacto
                     </h1>
                     <hr class="navbar-divider">
-                    <p class="subtitle">
-                        My first website with <strong>Bulma</strong>!
-                        <div class="buttons">
-                            <button class="button is-primary is-light">Primary</button>
-                            <button class="button is-link is-light">Link</button>
-                            <button class="button is-info is-light">Info</button>
-                            <button class="button is-success is-light">Success</button>
-                            <button class="button is-warning is-light">Warning</button>
-                            <button class="button is-danger is-light">Danger</button>
-                        </div>
+                    <div class="buttons">
+                        <a href="mailto:carlitosalvarezlinares@gmail.com?subject=Entrevista" target="_blank"
+                            class="button is-outlined is-info is-light"><i class="fas fa-envelope"></i>Email</a>
+                    </div>
+                    <p class="subtitle is-5">
+                        Actualmente vivo en Alicante.
                     </p>
+                    <div class="maps">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d50057.87907932921!2d-0.5075436211699611!3d38.35783559216384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd6235da3b9dab4b%3A0x1d7da872ac0b81e3!2sAlicante%20(Alacant)%2C%20Alicante!5e0!3m2!1ses!2ses!4v1588356752143!5m2!1ses!2ses"
+                            frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                            tabindex="0"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
@@ -576,11 +577,9 @@
     </footer>
 
     <!-- PARTICLES JS -->
-    <!-- <script src="./src/js/particles.min.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.js"></script>
 
     <!-- TYPEWRITER -->
-    <!-- <script src="https://unpkg.com/typewriter-effect@2.3.1/dist/core.js"></script> -->
     <script src="./src/js/typewriter.min.js"></script>
 
     <!-- SCROLL REVEAL -->

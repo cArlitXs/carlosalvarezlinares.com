@@ -1,7 +1,7 @@
 'use strict';
 
-// const path = 'http://localhost:5500';
-const path = 'https://carlosalvarezlinares.com';
+const path = 'http://localhost:5500';
+// const path = 'https://carlosalvarezlinares.com';
 
 // ON LOAD
 document.addEventListener('DOMContentLoaded', function () {
@@ -12,31 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
 function showModalDaw(e) {
     document.querySelector('#modal-daw').classList.add('is-active');
 }
-
+// CLOSE MODAL DAW
 function closeModalDaw() {
     document.querySelector('#modal-daw').classList.remove('is-active');
 }
-
-// TYPEWRITER
-// var app = document.getElementById('typewriter');
-// var typewriter = new Typewriter(app, {
-//     loop: true
-// });
-// typewriter.typeString('Hola, soy Carlos ')
-//     .pauseFor(1500)
-//     .deleteAll()
-//     .typeString('Soy desarrollador web ')
-//     .pauseFor(1500)
-//     .deleteAll()
-//     .typeString('en frontend y backend ')
-//     .pauseFor(1500)
-//     .deleteAll()
-//     .typeString('soy muy creativo ')
-//     .pauseFor(1500)
-//     .deleteAll()
-//     .typeString('y me gustan los retos.')
-//     .pauseFor(1500)
-//     .start();
 
 // MESSAGE IN CONSOLE
 function consoleHello() {
@@ -70,3 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+function closeNavbar(e) {
+    document.querySelector('#navbarDropdown').classList.remove('is-active');
+    document.querySelector('.navbar-burger').classList.remove('is-active');
+}

@@ -4,6 +4,12 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,QSA]
 
 ErrorDocument 404 /404.html
 
+# BEGIN DISABLE HSTS
+<IfModule mod_headers.c>
+Header always set Strict-Transport-Security "max-age=0; includeSubDomains;"
+</IfModule>
+# END DISABLE HSTS
+
 <IfModule mod_gzip.c>
     mod_gzip_on Yes
     mod_gzip_dechunk Yes

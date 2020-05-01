@@ -1,7 +1,7 @@
 'use strict';
 
-const path = 'http://localhost:5500';
-// const path = 'https://carlosalvarezlinares.com';
+// const path = 'http://localhost:5500';
+const path = 'https://carlosalvarezlinares.com';
 
 // ON LOAD
 document.addEventListener('DOMContentLoaded', function () {

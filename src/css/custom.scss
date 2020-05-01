@@ -7,17 +7,20 @@
     url("../font/cascadia-webfont.woff2") format("woff2"),
     url("../font/cascadia-webfont.ttf") format("truetype");
 }
+$black: rgba(
+  $color: #000,
+  $alpha: 1,
+);
+$monospace: "Cascadia", "Courier New", Courier, monospace;
 
 * {
   font-family: "Cascadia", "Nunito Sans", -apple-system, system-ui,
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-$black: rgba(
-  $color: #000,
-  $alpha: 1,
-);
-$monospace: "Cascadia", "Courier New", Courier, monospace;
+body {
+  background-color: $black;
+}
 
 .progress {
   border-radius: 290486px;

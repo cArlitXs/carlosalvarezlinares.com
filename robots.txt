@@ -1,0 +1,19 @@
+Sitemap: https://carlosalvarezlinares.com/sitemap.xml
+User-agent: Googlebot
+Allow: /
+Allow: /src/img
+Allow: /src/css
+Allow: /src/js
+Allow: /src/font
+Disallow: /src/pdf
+
+User-agent: Googlebot-Image
+Allow: /src/img
+
+User-agent: *
+Allow: /
+Allow: /src/img
+Allow: /src/css
+Allow: /src/js
+Allow: /src/font
+Disallow: /src/pdf

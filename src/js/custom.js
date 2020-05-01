@@ -1,7 +1,7 @@
 'use strict';
 
-// const path = 'http://localhost:5500';
-const path = 'https://carlosalvarezlinares.com';
+const path = 'http://localhost:5500';
+// const path = 'https://carlosalvarezlinares.com';
 
 // ON LOAD
 document.addEventListener('DOMContentLoaded', function () {
@@ -58,3 +58,6 @@ function closeNavbar(e) {
     document.querySelector('#navbarDropdown').classList.remove('is-active');
     document.querySelector('.navbar-burger').classList.remove('is-active');
 }
+
+// SCROLL REVEAL
+ScrollReveal({ reset: true }).reveal('.scrollreveal');

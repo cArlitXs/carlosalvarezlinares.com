@@ -5,7 +5,7 @@ const path = 'https://carlosalvarezlinares.com';
 
 // ON LOAD
 document.addEventListener('DOMContentLoaded', function () {
-    particlesJS.load('particles-js', path + '/src/js/particlesjs-config.json', () => consoleHello());
+    particlesJS.load('particles-js', '/src/js/particlesjs-config.json', () => consoleHello());
 });
 
 // SHOW MODAL DAW

@@ -6,6 +6,7 @@ Allow: /src/css
 Allow: /src/js
 Allow: /src/font
 Disallow: /src/pdf
+Disallow: 404.html
 
 User-agent: Googlebot-Image
 Allow: /src/img
@@ -17,3 +18,4 @@ Allow: /src/css
 Allow: /src/js
 Allow: /src/font
 Disallow: /src/pdf
+Disallow: 404.html

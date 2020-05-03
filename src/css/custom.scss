@@ -18,6 +18,10 @@ $monospace: "Cascadia", "Courier New", Courier, monospace;
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $black;
 }

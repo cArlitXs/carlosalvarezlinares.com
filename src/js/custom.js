@@ -61,3 +61,4 @@ function closeNavbar(e) {
 
 // SCROLL REVEAL
 ScrollReveal({ reset: true }).reveal('.scrollreveal');
+

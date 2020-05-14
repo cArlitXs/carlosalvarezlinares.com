@@ -1,6 +1,6 @@
 RewriteEngine On
-RewriteCond %{HTTP_HOST} !^carlosalvarezlinares\.com$ [NC]
-RewriteRule ^(.*)$ https://carlosalvarezlinares.com/$1 [R=301,L]
+RewriteCond %{HTTPS} !=on
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301,QSA]
 
 ErrorDocument 404 /404.html
 

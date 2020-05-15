@@ -42,7 +42,7 @@ function closeModalDaw() {
 
 // DESCARGAR PDF
 document.querySelector('.a-download').addEventListener('click', event =>
-    event.target.href = "../pdf/CV-Carlos-Alvarez-Linares.pdf"
+    event.target.href = "https://carlosalvarezlinares.com/src/pdf/CV-Carlos-Alvarez-Linares.pdf"
 );
 
 // MESSAGE IN CONSOLE
